@@ -4,7 +4,7 @@ const resp = document.querySelector('h3')
 
 frm.addEventListener('submit',(e) =>{
     const entrada  = Number(frm.entrada.value)
-    const selecao = frm.horas.checked
+    const selecao = frm.minutos.checked
 
     let duracao
     if (selecao) {
