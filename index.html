@@ -24,7 +24,7 @@
         p{
             text-align: center;
         }
-        #entrada{
+        #inEntrada, #inEntrada1{
             outline: none;
             margin-bottom: 10px;
             padding: 7px;
@@ -47,15 +47,16 @@
 <body>
     <h1>Conversão </h1>
     <form>
-            <input type="number" id="entrada" required autofocus placeholder="digite o tempo...">
+            <input type="number" id="inEntrada" required autofocus placeholder="Digite o 1º numero">
+            <input type="number" id="inEntrada1" required autofocus placeholder="Digite 2º numero">
         
-        <p>Horas
-            <input type="radio" name="horas" id="horas" required> ---EM---
-            <input type="radio" name="horas" id="horas" required>Min
+        <p>SOMAR
+            <input type="radio" name="soma" id="inSoma" required > OU
+            <input type="radio" name="soma" id="multi" >MULT
         </p>
 
-        <input type="submit" value="Converte" id="enviar">
-        <input type="reset" value="Limpar" id="limpar">
+        <input type="submit" value="Resolver" id="enviar">
+        <input type="reset" value="Apagar" id="limpar">
     
     </form>
     <h3></h3>

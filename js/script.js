@@ -3,25 +3,30 @@ const resp = document.querySelector('h3')
 
 
 frm.addEventListener('submit',(e) =>{
-    const entrada  = Number(frm.entrada.value)
-    const selecao = frm.minutos.checked
+    const numero  = Number(frm.inEntrada.value)
+    const numero1 = Number(frm.inEntrada1.value)
+    const opcao = frm.inSoma.checked
+    
+    let resultado
 
-    let duracao
-    if (selecao) {
-         duracao = entrada / 60
-        resp.innerText = `${duracao} Horas`
-    } else {
-        duracao = entrada * 60
-        resp.innerText = `${duracao} Minutos`
+    if (opcao) {
+        resultado = numero + numero1
+        resp.innerText = `A soma entre ${numero} e ${numero1} = ${resultado}`
+    } 
+    
+    else{
+        resultado = numero * numero1
+        resp.innerText = `A Multiplicação entre ${numero} e ${numero1} = ${resultado}`
+       
     }
-
 
     frm.addEventListener('reset',() =>{
         resp.innerText = ''
     })
-
-
-
+    
     e.preventDefault()
+
+
+
 })
 
