@@ -6,24 +6,37 @@
     <title>Matemática</title>
 
     <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
         body{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         form{
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            
+            flex-direction: column;
         }
 
         p{
+           margin: 10px 0 ;
             text-align: center;
         }
+
+        h1{
+            text-align: center;
+        }
+
         #inEntrada, #inEntrada1{
             outline: none;
             margin-bottom: 10px;
@@ -36,7 +49,9 @@
         }
 
         h3{
+            margin: 0;
             height: 0;
+            font-size: 1rem;
         }
 
 
@@ -45,8 +60,8 @@
     </style>
 </head>
 <body>
-    <h1>Matematica </h1>
     <form>
+        <h1>Matematica </h1>
             <input type="number" id="inEntrada" required autofocus placeholder="Digite o 1º numero">
             <input type="number" id="inEntrada1" required autofocus placeholder="Digite o 2º numero">
         
